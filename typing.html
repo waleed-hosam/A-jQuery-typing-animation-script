@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 100px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            overflow: hidden;
+            background-color: #000;
+            color: #fff;
+            user-select: none;
+        }
+        body:not(.footer) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 100vh;
+        }
+        .footer {
+            font-weight: 400;
+            padding: 10px 20px;
+            text-align: center;
+            width: 100%;
+            font-size: 20px;
+            position: absolute;
+            bottom: 0;
+            border-top: 2px solid rgba(255, 255, 255, .5);
+        }
+    </style>
+</head>
+<body>
+    <p class="typing"></p>
+    <p class="footer">All Rights Reserved | Waleed Hosam &copy; 2024</p>
+    <script src="typed.umd.js"></script>
+    <script>
+        new Typed(".typing", {
+            strings: ["Web Developer", "Graphic Designer", "Python Programmer", "C++ Developer", ""],
+            typeSpeed: 50,
+            backSpeed: 60,
+            loop: true, 
+        })
+    </script>
+</body>
+</html>
